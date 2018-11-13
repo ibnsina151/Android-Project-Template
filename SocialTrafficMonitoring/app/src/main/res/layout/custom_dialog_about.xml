@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#3E80B4"
+    android:orientation="vertical" >
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_crossing_applogo"
+
+        android:layout_height="80dp" />
+
+    <TextView
+        android:id="@+id/txt_dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="দেখেচলো"
+        android:textColor="@android:color/white"
+        android:textSize="22dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Developed By"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorDeepper_white"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@drawable/about_cardview"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/ic_email_black_24dp"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="Ibn Sina Munim"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorFullBlack"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="munim12.cse@gmail.com"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:gravity="center|left"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/ic_email_black_24dp"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="Runa Akter"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorFullBlack"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="runaakter.cse@gmail.com"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:gravity="center|left"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#3E80B4"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_yes"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@color/colorDeepper_white"
+            android:clickable="true"
+            android:text="Close"
+            android:textColor="#5DBCD2"
+            android:textStyle="bold" />
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_no"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:background="@android:color/white"-->
+            <!--android:clickable="true"-->
+            <!--android:text="No"-->
+            <!--android:textColor="#5DBCD2"-->
+            <!--android:textStyle="bold" />-->
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

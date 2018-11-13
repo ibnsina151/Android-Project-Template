@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ibnsina.medicalqbank.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <ExpandableListView
+        android:id="@+id/simpleExpandableListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90"
+        android:divider="#BDBDBD"
+        android:dividerHeight="2dp"
+        android:groupIndicator="@drawable/groupitem_selector"
+        android:childIndicator="@drawable/childitem_selector"
+        android:childDivider="#E0E0E0"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:layout_marginTop="55dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:text="Generate Test"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/tollbar_viewer"
+        android:layout_weight="10"/>
+
+
+</LinearLayout>

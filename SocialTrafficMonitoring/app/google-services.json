@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "396699973733",
+    "firebase_url": "https://trafficmonitor-192813.firebaseio.com",
+    "project_id": "trafficmonitor-192813",
+    "storage_bucket": "trafficmonitor-192813.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:396699973733:android:65da59ae0f1444e0",
+        "android_client_info": {
+          "package_name": "com.example.ibnsina.socialtrafficmonitoring"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "396699973733-fpaehekjdtiotc5s435irparvla6gvq3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ibnsina.socialtrafficmonitoring",
+            "certificate_hash": "a3b797cd63574c9af2a7dfe9575989631e528393"
+          }
+        },
+        {
+          "client_id": "396699973733-ej1rsbbhppg4oeamddqgv9k9noso22a8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUqolk2ebMumafLd00rhHU4DLRs0LuJnM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "396699973733-ej1rsbbhppg4oeamddqgv9k9noso22a8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

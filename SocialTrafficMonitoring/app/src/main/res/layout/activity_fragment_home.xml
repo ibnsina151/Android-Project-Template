@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="15"
+        android:layout_height="0dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:background="@drawable/login_cardview"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/txt_create_mobile"
+                android:background="@drawable/boder_oval"
+                android:layout_width="match_parent"
+                android:drawableRight="@drawable/ic_search_black_24dp"
+                android:layout_height="40dp"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:paddingLeft="10dp"
+                android:hint="Traffic Area Ex: Moghbazar"
+                android:inputType="textAutoComplete"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="75"
+        android:layout_height="0dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBlack"
+            android:scrollbars="vertical"
+            android:id="@+id/post_viewer_recycle"
+            android:scrollbarStyle="outsideInset"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:clickable="true"/>
+
+
+
+
+
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="10"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:textSize="20dp"
+            android:layout_weight="30"
+            android:text="Localtion: "
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorWhite"
+            android:gravity="center|left"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:textSize="20dp"
+            android:layout_weight="20"
+            android:text="Localtion: "
+
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/ic_road_barrier"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:textColor="@color/colorWhite"
+            android:gravity="center|left"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:textSize="20dp"
+            android:layout_weight="50"
+            android:text="Road Block "
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorRed_close"
+            android:gravity="center|left"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
