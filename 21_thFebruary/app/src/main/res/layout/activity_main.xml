@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ibnsina.a21_thfebruary.MainActivity"
+    android:id="@+id/drawer_layout">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/navigation_custom_toolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:background="@drawable/history_menu"
+            android:id="@+id/clickable"
+            android:layout_height="66dp"
+            android:adjustViewBounds="true" />
+
+    </LinearLayout>
+
+
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:itemBackground= "@drawable/ic_nav_backgournd"
+        app:insetForeground="@color/colorPrimaryDark"
+        app:menu="@menu/item_menu"
+        android:id="@+id/navview_state"
+        app:headerLayout="@layout/navigation_header">
+    </android.support.design.widget.NavigationView>
+
+
+
+
+</android.support.v4.widget.DrawerLayout>
