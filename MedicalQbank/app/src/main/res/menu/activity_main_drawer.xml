@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/nav_notes"
+        android:icon="@drawable/ic_menu_camera"
+        android:title="Notes" >
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_general"
+                    android:title="General" >
+                    <menu>
+                        <group android:checkableBehavior="single">
+
+                            <item
+                                android:title="Bacteriology"
+                                android:id="@+id/nav_bac" />
+                            <item
+                                android:title="Virology"
+                                android:id="@+id/nav_viro" />
+                            <item
+                                android:title="Mycology"
+                                android:id="@+id/nav_mycology" />
+                            <item
+                                android:title="Immunology"
+                                android:id="@+id/nav_immunology" />
+                            <item
+                                android:title="Parasitology"
+                                android:id="@+id/nav_parasitoloty" />
+                            <item
+                                android:title="General Pathology"
+                                android:id="@+id/nav_pathology" />
+                            <item
+                                android:title="General Pharmacology"
+                                android:id="@+id/nav_pharmacology" />
+                            <item
+                                android:title="Biochemistry"
+                                android:id="@+id/nav_biochemistry" />
+                            <item
+                                android:title="Nutrition"
+                                android:id="@+id/nav_nutrition" />
+
+
+                        </group>
+                    </menu>
+                </item>
+
+                <item
+                    android:id="@+id/nav_system"
+                    android:title="Systemic" />
+
+                <item
+                    android:id="@+id/nav_other"
+                    android:title="Others" />
+            </group>
+        </menu>
+    </item>
+
+
+    <item
+        android:id="@+id/nav_flashcard"
+        android:icon="@drawable/ic_menu_gallery"
+        android:title="Flashcard" >
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_flashcard3423"
+                    android:icon="@drawable/ic_menu_gallery"
+                    android:title="Flashcard" />
+            </group>
+        </menu>
+
+
+    </item>
+
+
+        <item
+            android:id="@+id/nav_seip"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Seip-assesment" >
+            <menu>
+                <group android:checkableBehavior="single">
+
+                </group>
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/nav_mycontents"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="My Contents" >
+            <menu>
+                <group android:checkableBehavior="single">
+
+                </group>
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/nav_dyexam"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Dynamic Exam" >
+            <menu>
+                <group android:checkableBehavior="single">
+
+                </group>
+            </menu>
+        </item>
+
+
+        <item
+            android:id="@+id/nav_stexam"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Statistics" >
+            <menu>
+                <group android:checkableBehavior="single">
+
+                </group>
+            </menu>
+        </item>
+
+
+
+    <item android:title="About">
+        <menu>
+            <item
+                android:id="@+id/nav_faq"
+                android:title="FAQ" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_star_half_black_24dp"
+                android:title="Rate Us" />
+        </menu>
+    </item>
+
+</menu>

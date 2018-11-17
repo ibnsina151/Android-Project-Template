@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">NavigationDrawerTest</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open"></string>
+    <string name="drawer_close"></string>
+
+    <string name="fa_glass">&#xf000;</string>
+    <string name="fa_music">&#xf001;</string>
+    <string name="fa_search">&#xf002;</string>
+    <string name="fa_envelope_o">&#xf003;</string>
+    <string name="fa_heart">&#xf004;</string>
+    <string name="fa_star">&#xf005;</string>
+    <string name="fa_star_o">&#xf006;</string>
+    <string name="fa_user">&#xf007;</string>
+    <string name="fa_film">&#xf008;</string>
+    <string name="fa_chevron_right">&#xf054;</string>
+    <string name="fa_chevron_down">&#xf078;</string>
+</resources>

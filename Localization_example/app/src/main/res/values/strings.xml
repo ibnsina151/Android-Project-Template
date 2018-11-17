@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Localization_example</string>
+    <string name="bangla">ওহে বিশ্ব</string>
+    <string name="bangla2">ইবনে সিনা মুনিম</string>
+    <string name="arabic">نقطة الدروس7</string>
+    <string name="chinese">教程点</string>
+</resources>

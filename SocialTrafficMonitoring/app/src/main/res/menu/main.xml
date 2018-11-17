@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/btn_search_recipes"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_notification_bell"
+        android:title=""
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/btn_about_recipes"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_developer_mode"
+        android:title=""
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/btn_share_someone"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_controls"
+        android:title="Share"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/btn_help"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_controls"
+        android:title="LogOut"
+        app:showAsAction="never" />
+
+</menu>

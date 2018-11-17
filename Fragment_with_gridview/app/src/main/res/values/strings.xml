@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Fragment_with_gridview</string>
+    <string name="title_section1">Photo 1</string>
+    <string name="title_section2">Photo 2</string>
+    <string name="title_section3">Photo 3</string>
+</resources>

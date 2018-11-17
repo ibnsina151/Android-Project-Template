@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:weightSum="100"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:gravity="center"
+        android:id="@+id/txt_post_make_header"
+        android:textColor="@color/colorPurple_textHeader"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:text="Make Post"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="#0D47A1"
+        android:id="@+id/txtpost_make_subtitle"
+        android:text="Suggest Traffic Jam situation"/>
+
+    <!-- Login progress -->
+    <ProgressBar
+        android:id="@+id/post_process"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"
+        android:background="@drawable/login_cardview"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:scrollbarStyle="insideInset"
+        android:layout_height="0dp"
+        android:layout_weight="90">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin">
+
+                <AutoCompleteTextView
+                    android:id="@+id/txt_area"
+                    android:background="@drawable/boder_oval"
+                    android:layout_width="match_parent"
+                    android:drawableLeft="@drawable/ic_location_pointer"
+                    android:layout_height="40dp"
+                    android:paddingLeft="10dp"
+                    android:hint=" Select Area"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+                <AutoCompleteTextView
+                    android:id="@+id/txt_signal"
+                    android:background="@drawable/boder_oval"
+                    android:layout_width="match_parent"
+                    android:drawableLeft="@drawable/ic_traffic_light"
+                    android:layout_height="40dp"
+                    android:paddingLeft="10dp"
+                    android:hint="Select Signal"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_height="wrap_content">
+
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    style="?android:textAppearanceMedium"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:id="@+id/btm_signal_waiting_time"
+                    android:background="@drawable/boder_oval"
+                    android:drawableLeft="@drawable/ic_hourglass"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:hint="Waiting Time"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    style="?android:textAppearanceMedium"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_marginRight="@dimen/activity_vertical_margin" android:id="@+id/btn_jam_level"
+                    android:background="@drawable/boder_oval"
+                    android:drawableLeft="@drawable/ic_controls"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:hint="Jam Level"/>
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:id="@+id/image_loader"
+                android:background="@drawable/create_circle_imageview"
+                android:layout_height="100dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:src="@android:drawable/ic_menu_camera"
+                android:layout_gravity="center"/>
+
+
+
+                <EditText
+                    android:inputType="textMultiLine"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:id="@+id/txt_post_body"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:lines="8"
+                    android:minLines="6"
+                    android:gravity="top|left"
+                    android:maxLines="10"
+                    android:textSize="20dp"
+                    android:hint="Write about this traffic signal?"
+                    android:background="@drawable/boder_oval"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:scrollbars="vertical"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/btn_post"
+            android:background="#4A148C"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="Post"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

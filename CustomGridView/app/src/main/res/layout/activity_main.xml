@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffb74d">
+
+    <GridView
+        android:id="@+id/customgrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/os_texts"
+        android:numColumns="2" />
+
+    <TextView
+        android:id="@+id/os_texts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="List of Operating Systems"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:layout_marginTop="2dp"/>
+</RelativeLayout> 

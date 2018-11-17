@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registration_form"
+    android:scrollbars="vertical"
+    android:scrollbarStyle="outsideOverlay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorBackground"
+    tools:context="com.example.ibnsina.socialtrafficmonitoring.RegistrationForm">
+
+
+
+    <!-- Login progress -->
+    <ProgressBar
+        android:id="@+id/reg_process"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"/>
+
+     <ScrollView
+         android:layout_width="match_parent"
+         android:id="@+id/reg_fromview"
+         android:orientation="vertical"
+         android:layout_weight="90"
+         android:layout_marginBottom="@dimen/activity_vertical_margin"
+         android:layout_marginLeft="@dimen/activity_horizontal_margin"
+         android:layout_marginRight="@dimen/activity_horizontal_margin"
+         android:layout_marginTop="@dimen/activity_vertical_margin"
+         android:layout_height="wrap_content">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:background="@drawable/login_cardview"
+             android:orientation="vertical"
+             android:layout_weight="90"
+
+
+
+             android:paddingLeft="@dimen/activity_horizontal_margin"
+             android:paddingRight="@dimen/activity_horizontal_margin"
+             android:paddingTop="@dimen/activity_horizontal_margin"
+             android:paddingBottom="@dimen/activity_horizontal_margin"
+             android:layout_height="0dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CREATE YOUR ACCOUNT!"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fill up the bellow form to accress our app"
+                android:gravity="center"/>
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:id="@+id/reg_image_loader"
+                android:background="@drawable/create_circle_imageview"
+                android:layout_height="100dp"
+                android:src="@android:drawable/ic_menu_camera"
+                android:layout_gravity="center"/>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/reg_txt_create_name"
+                    android:background="@drawable/boder_oval"
+                    android:layout_width="match_parent"
+                    android:drawableLeft="@drawable/ic_man_user"
+                    android:layout_height="40dp"
+                    android:paddingLeft="10dp"
+                    android:hint="Your Name"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/create_xmlcardview_gender"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:paddingTop="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gander"
+                    style="?android:textAppearanceMedium" />
+
+                <RadioGroup
+                    android:id="@+id/radioGrp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioM"
+                        style="?android:textAppearanceMedium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:checked="false"
+                        android:layout_weight="1"
+                        android:text="Male" />
+
+                    <RadioButton
+                        android:id="@+id/radioF"
+                        style="?android:textAppearanceMedium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:checked="false"
+                        android:layout_weight="1"
+                        android:text="Female" />
+                </RadioGroup>
+
+            </android.support.design.widget.TextInputLayout>
+
+             <android.support.design.widget.TextInputLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+
+                 <EditText
+                     android:id="@+id/reg_txt_create_mobile"
+                     android:background="@drawable/boder_oval"
+                     android:layout_width="match_parent"
+                     android:drawableLeft="@drawable/ic_vintage_cellphone"
+                     android:layout_height="40dp"
+                     android:paddingLeft="10dp"
+                     android:hint="Mobile"
+                     android:inputType="textEmailAddress"
+                     android:maxLines="1"
+                     android:singleLine="true" />
+
+             </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/reg_txt_create_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingLeft="10dp"
+                    android:hint="@string/prompt_password"
+                    android:imeActionId="@+id/login_2"
+                    android:drawableLeft="@drawable/ic_lock"
+                    android:background="@drawable/boder_oval"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_signup"
+                style="?android:textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/side_nav_bar"
+                android:layout_marginTop="16dp"
+                android:text="Create account"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:textAppearanceSmall"
+                android:id="@+id/reg_txt_terms"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Terms &amp; Conditions"/>
+
+         </LinearLayout>
+
+        </ScrollView>
+
+</LinearLayout>

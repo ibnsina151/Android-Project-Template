@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_menu_history"
+            android:title="@string/history" />
+        <item
+            android:id="@+id/nav_image"
+            android:icon="@drawable/ic_menu_event"
+            android:title="@string/event" />
+        <item
+            android:id="@+id/nav_book"
+            android:icon="@drawable/ic_menubook"
+            android:title="@string/book" />
+        <item
+            android:id="@+id/nav_song"
+            android:icon="@drawable/ic_menu_song"
+            android:title="@string/audio" />
+        <item
+            android:id="@+id/nav_vedio"
+            android:icon="@drawable/ic_menu_video"
+            android:title="@string/vedio" />
+        <item
+            android:id="@+id/nav_sms"
+            android:icon="@drawable/ic_mail_black_24dp"
+            android:title="@string/sms" />
+        <item
+            android:id="@+id/nav_rate_us"
+            android:icon="@drawable/ic_menu_rate_us"
+            android:title="@string/rateus" />
+    </group>
+
+
+</menu>
